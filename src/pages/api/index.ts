@@ -1,3 +1,6 @@
+// https://github.com/jaggedsoft/node-binance-api
+// https://account.jet-bot.com/dashboard/bots-marketplace
+
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Response = {

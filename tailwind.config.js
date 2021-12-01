@@ -1,6 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const defaultTheme = require('tailwindcss/defaultTheme')
 const defaultColor = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin');
+const defaultConfig = require('tailwindcss/defaultConfig');
+const {
+  default: prefixNegativeModifiers
+} = require('tailwindcss/lib/util/prefixNegativeModifiers');
+const map = require('lodash/map');
 
 module.exports = {
   mode: 'jit',
@@ -14,6 +20,31 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'bounce-slow': 'bounce-short 1s linear infinite ',
+        'flip': 'flip 1s linear',
+       },
+       keyframes: {
+        'bounce-short': {
+          '0%, 100%': {
+            transform: 'translateY(-5%)',
+            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
+           },
+        },
+        'flip': {
+          from:{
+            transform: 'rotateY(0deg)'
+          },
+          to: {
+            transform: 'rotateY(180deg)'
+          }
+        }
+       },
       fontFamily: {
         sans: ['Inter', 'Clarity City', ...defaultTheme.fontFamily.sans],
         slab: ['Sriracha', ...defaultTheme.fontFamily.sans]
@@ -22,29 +53,18 @@ module.exports = {
         standalone: { raw: '(display-mode: standalone)' }
       },
       colors: {
-        gray: {
-          50: '#7e7b8f',
-          100: '#747185',
-          200: '#6a677b',
-          300: '#605d71',
-          400: '#565367',
-          500: '#4c495d',
-          600: '#423f53',
-          700: '#383549',
-          800: '#2e2b3f',
-          900: '#242135'
-        },
+        cyan: defaultColor.cyan,
         primary: {
-          50: '#b25de3',
-          100: '#a853d9',
-          200: '#9e49cf',
-          300: '#943fc5',
-          400: '#8a35bb',
-          500: '#802bb1',
-          600: '#7621a7',
-          700: '#6c179d',
-          800: '#620d93',
-          900: '#580389'
+          50: '#EFF6FF',
+          100: '#DBEAFE',
+          200: '#BFDBFE',
+          300: '#93C5FD',
+          400: '#60A5FA',
+          500: '#3B82F6',
+          600: '#2563EB',
+          700: '#1D4ED8',
+          800: '#1E40AF',
+          900: '#1E3A8A'
         },
         secondary: {
           50: '#5f5a70',
@@ -106,6 +126,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp')
+    require('@tailwindcss/line-clamp'),
+
   ]
 }

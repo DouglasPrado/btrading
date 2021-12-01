@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
           <link rel='stylesheet' href='https://fonts.cdnfonts.com/css/inter' />
           <link rel='stylesheet' href='https://fonts.cdnfonts.com/css/sriracha' />
         </Head>
-        <body>
+        <body className="dark">
           <Main />
           <NextScript />
         </body>

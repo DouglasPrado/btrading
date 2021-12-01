@@ -56,7 +56,7 @@ const SiteLayout = ({
   const pageImage = ogImage || process.env.siteMeta.imageUrl
 
   return (
-    <div className='flex flex-col min-h-screen bg-light-100 dark:bg-gray-900'>
+    <div className='flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900'>
       <Head>
         <meta name='description' content={pageDescription} />
         <meta property='og:locale' content='id_ID' />
