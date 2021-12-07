@@ -23,8 +23,8 @@ const navigation = [
   { name: 'dashboard', href: '/', current: true },
   // { name: 'ranking', href: '/ranking', current: false },
   { name: 'marketplace', href: '/marketplace', current: false },
-  { name: 'arbitragem', href: '/arbitrage', current: false },
-  { name: 'ordens', href: '/orders/1', current: false },
+  // { name: 'arbitragem', href: '/arbitrage', current: false },
+  { name: 'minhas estratégias', href: '/orders/1', current: false },
   { name: 'assinaturas', href: '/subscription', current: false },
   { name: 'configurações', href: '/configuration', current: false },
 ]
@@ -35,7 +35,7 @@ const Header = ({ ...props }) => {
   const router = useRouter()
 
   return <div {...props}>
-    <Disclosure as="nav" className="bg-white dark:bg-gray-900 shadow-sm">
+    <Disclosure as="nav" className="bg-white dark:bg-gray-800 shadow-sm">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

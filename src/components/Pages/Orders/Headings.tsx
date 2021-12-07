@@ -1,7 +1,14 @@
-export default function Headings({ title="", btn_title="", btn_function }) {
+import { PencilIcon } from "@heroicons/react/outline";
+
+export default function Headings({ title="", btn_title="", btn_edit=false, btn_function }) {
   return (
-    <div className="pb-5 border-b border-gray-200 dark:border-gray-700 sm:flex sm:items-center sm:justify-between">
-      <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50 lowercase">{title}</h3>
+    <div className="px-4 sm:px-0 pb-5 border-b border-gray-200 dark:border-gray-700 sm:flex sm:items-center sm:justify-between">
+      <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-50 lowercase">{title}
+        { btn_edit && <button className="dark:bg-gray-800 p-3 rounded ml-5 dark:hover:bg-opacity-60">
+            <PencilIcon className="h-4 w-4 text-white" />
+          </button>
+        }
+      </h3>
       <div className="mt-3 sm:mt-0 sm:ml-4">
         <button
           onClick={btn_function}

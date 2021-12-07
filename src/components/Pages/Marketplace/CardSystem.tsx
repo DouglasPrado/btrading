@@ -45,7 +45,7 @@ export default function CardSystem({ dataTrader, setOpen }) {
         }}>
           <CardFront trader={trader} isShowing={isShowing} setIsShowing={setIsShowing} resetIsShowing={resetIsShowing} />
         </a>
-        
+
       </Transition>
     </div>
 

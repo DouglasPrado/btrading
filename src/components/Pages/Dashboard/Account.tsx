@@ -15,7 +15,7 @@ const Account = ({ className = '', variants = 'primary', ...props }: ArbitragePr
   return (
     <Link href="/account/1" >
       <a className="cursor-pointer w-full ">
-        <div className="bg-white dark:bg-gray-800 dark:hover:bg-opacity-80 rounded shadow ">
+        <div className="bg-white dark:bg-gray-800 dark:hover:bg-opacity-80  rounded shadow border border-gray-800 hover:border hover:border-yellow-400">
           <div className="px-4 sm:px-6 lg:max-w-6xl lg:mx-auto lg:px-8">
             <div className="py-6 md:flex md:items-center md:justify-between">
               <div className="flex-1 min-w-0">

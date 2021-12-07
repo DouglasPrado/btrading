@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <SiteLayout fullTitle='Dashboard | BTrading' withHeader withFooter animate>
       <div className="min-h-full ">
-      <Banner />
+      {/* <Banner /> */}
 
         <div className="py-10">
           <main>
@@ -159,29 +159,39 @@ export default function Home() {
                   <table className="min-w-full divide-y divide-gray-900">
                     <tbody>
                       <tr  className={'bg-gray-800 border-l-4 border-red-400 border-b-2 border-b-gray-900 hover:bg-opacity-80'}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Bitcoin</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">Binance</td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">2%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">PancakeSwap</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Analise RSI </td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">BTC/USDT</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-red-300">-1.5%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">Completo</td>
                       </tr>
                       <tr  className={'bg-gray-800 border-l-4 border-l-green-400 border-b-2 border-b-gray-900  hover:bg-opacity-80 '}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Bitcoin</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">Binance</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Analise RSI</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">BTC/USDT</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">2%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">Completo</td>
                       </tr>
                       <tr  className={'bg-gray-800 border-l-4 border-l-red-400 border-b-2 border-b-gray-900  hover:bg-opacity-80 '}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Bitcoin</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">Binance</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Hold</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">BTC/USDT</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">2%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-yellow-300">Aberto</td>
                       </tr>
                       <tr  className={'bg-gray-800 border-l-4 border-l-green-400 border-b-2 border-b-gray-900  hover:bg-opacity-80 '}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Bitcoin</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">Binance</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Estocastico</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">BTC/USDT</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">2%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">Completo</td>
                       </tr>
                       <tr  className={'bg-gray-800 border-l-4 border-l-red-400 border-b-2 border-b-gray-900  hover:bg-opacity-80 '}>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Bitcoin</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-500">Binance</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">Analise RSI</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">BTC/USDT</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">2%</td>
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-green-300">Completo</td>
                       </tr>
                     </tbody>
                   </table>

@@ -31,14 +31,27 @@ export default function CardFront({ trader, isShowing, setIsShowing, resetIsShow
     </div>
     <div>
       <div className="-mt-px">
-        <dl className="mt-1 flex-grow flex flex-row justify-between p-3">
+        <dl className="mt-1 flex-grow flex flex-row justify-between px-3 pt-3">
+          <dt className="text-gray-500 dark:text-gray-400 text-sm">Risco</dt>
+          <dd className="text-gray-500 dark:text-green-400 text-sm font-semibold">
+            <div className="flex flex-row h-4 items-end">
+              <div className="h-1 w-1 mr-0.5 bg-green-400"></div>
+              <div className="h-2 w-1 mr-0.5 bg-yellow-500"></div>
+              <div className="h-3 w-1 mr-0.5 bg-yellow-600"></div>
+              <div className="h-4 w-1 mr-0.5 bg-red-500"></div>
+              <div className="h-5 w-1 mr-0.5 bg-red-600"></div>
+              {/* <div className="h-6 w-1 mr-1 bg-gray-400"></div> */}
+            </div>
+          </dd>
+        </dl>
+        <dl className="mt-1 flex-grow flex flex-row justify-between px-3">
           <dt className="text-gray-500 dark:text-gray-400 text-sm">PNL</dt>
           <dd className="text-gray-500 dark:text-green-400 text-sm font-semibold">
             23,9%
           </dd>
         </dl>
         <dl className="mt-1 flex-grow flex flex-row justify-between px-3">
-          <dt className="text-gray-500 dark:text-gray-400 text-sm">Seguidores</dt>
+          <dt className="text-gray-500 dark:text-gray-400 text-sm">Novos seguidores</dt>
           <dd className="text-gray-500 dark:text-gray-400 text-sm">
             273
           </dd>
